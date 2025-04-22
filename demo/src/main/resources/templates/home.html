@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero Food Waste</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <!-- Contains the heading, navigation and banner image -->
+  <header>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" th:href="@{/}" style="color:white;">Zero Food Waste</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a th:href="@{/}" style="font-size: 20px;">About Us<span class = "sr-only">(current)</span></a></li>
+          <li><a th:href="@{/}" style="font-size: 20px;">FAQ</a></li>
+          <li><a th:href="@{/}" style="font-size: 20px;">Contact Us</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a th:href="@{/login}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a th:href="@{/register}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Main Image  -->
+    <div class="jumbotron">
+      <img th:src="@{images/homepagebanner-2.png}" alt="Homepage Image" class="img-responsive">
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- Mission -->
+  <div style="margin: 0 auto; max-width: 1000px;">
+    <h1 style="text-align: center;">Our Mission</h1>
+    <h4 style="text-align: center; margin-top: 10px; margin-bottom: 30px; padding-left: 20px; padding-right: 20px; font-size: 22px;">Our mission is to empower primary school students to reduce food waste and protect the planet through our interactive and engaging interclass food waste challenge.
+      <br><br>
+      We aim to inspire a lifelong commitment to sustainability by fostering environmental awareness and promoting responsible food consumption habits among the next generation.</h4>
+  </div>
+
+  <!-- Latest winners -->
+  <style>
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-column: 2 / 4;
+}
+</style>
+
+  <!-- Food Challenge Class Winners -->
+  <h3 style="text-align: center;">Latest Challenge Winners</h3>
+  <div class="events-grid">
+      <div class="grid-container">
+        <article class="experiences-detail" style="margin-left:20px;">
+          <div class="grid-item">
+            <img th:src="@{images/pizzaparty.jpeg}" alt="Experience 1" style="width:350px; height: 200px;"/>
+          </div>
+          <div>
+            <br>
+            <p style="text-align:center;"><em>Congratulations to Class 6 at Lota Primary school for winning a Friday Pizza Party as the 1st place winners of their Food Waste Challenge!</em></p>
+            <p style="text-align:center; font-size:16px;"><strong>Class 6 of Lota Primary School</strong></p>
+          </div>
+        </article>
+
+        <article class="experiences-detail" style="margin-left:20px;">
+          <div class="grid-item">
+            <img th:src="@{images/mufti.jpg}" alt="Experience 1" style="width:350px; height: 200px;"/>
+          </div>
+          <div>
+            <br>
+            <p style="text-align:center;"><em>Class 4 of Centaur Primary School won a mufti day for their class as the winners of their school Food Waste Challenge!</em></p>
+            <p style="text-align:center; font-size:16px;"><strong>Class 4 of Centaur Primary School</strong></p>
+          </div>
+        </article>
+      </div>
+  </div>
+  <br>
+
+
+</main>
+
+<!-- Footer -->
+
+<div class="footer-basic" style="position: fixed;">
+  <footer>
+    <ul class="list-inline">
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/terms-of-use}">Terms and Use</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/privacy-policy}">Privacy Policy</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/cookies-policy}">Cookies</a></li>
+    </ul>
+    <p><a href="mailto:theGirlz@example.com" style="color:white; font-size: 12px;">Email Us: theGirlz@example.com</a></p>
+    <p class="copyright">Zero Food Waste © 20238</p>
+  </footer>
+</div>
+
+
+
+</body>
+
+</html>

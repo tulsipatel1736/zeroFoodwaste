@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zero Food Waste</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" th:href="@{/}" style="color:white;">Zero Food Waste</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li>        <a class="nav-link" th:href="@{/challenge-leaderboard}" style="font-size: 18px;">Challenge Leaderboard</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a th:href="@{/logout}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<style>
+    img {
+      display: block;
+      margin: auto;
+    }
+  </style>
+
+
+
+<div style="padding-top: 100px;">
+    <img th:src="@{images/ChallengeLeaderboard-700.png}" alt="Class Leaderboard">
+</div>
+
+
+
+<div style="padding-top: 20px; margin-bottom: 20px; text-align: center;">
+    <button class="btn btn-primary mr-2 btn-lg" onclick="window.history.back()">Back</button>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div class="footer-basic" style="position: fixed;">
+    <footer>
+        <ul class="list-inline">
+            <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/terms-of-use}">Terms and Use</a></li>
+            <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/privacy-policy}">Privacy Policy</a></li>
+            <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/cookies-policy}">Cookies</a></li>
+        </ul>
+        <p><a href="mailto:theGirlz@example.com" style="color:white; font-size: 12px;">Email Us: theGirlz@example.com</a></p>
+        <p class="copyright">Zero Food Waste © 20238</p>
+    </footer>
+
+
+</div>
+</body>
+</html>

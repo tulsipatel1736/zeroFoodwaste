@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero Food Waste</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <!-- Contains the heading, navigation and banner image -->
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" th:href="@{/}" style="color:white;">Zero Food Waste</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a th:href="@{/}" style="font-size: 20px;">About Us<span class = "sr-only">(current)</span></a></li>
+            <li><a th:href="@{/}" style="font-size: 20px;">FAQ</a></li>
+            <li><a th:href="@{/}" style="font-size: 20px;">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a th:href="@{/login}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a th:href="@{/register}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <br>
+    <br>
+    <br>
+    <div style="margin: 0 auto; max-width: 800px;">
+      <div style="padding: 20px 20px 0 20px;"></div>
+      <h3 style="text-align: center;">Privacy Policy</h3>
+      <div style="padding: 20px; text-align: justify; margin-left: 20px; margin-right: 20px;">
+        <p style = "padding-top:0px; text-align: justify;">
+          This Privacy Policy describes how we collect, use, and disclose your personal information when you use our website or services.
+          <br><br>
+          <strong>Collection of Information</strong>
+          We may collect personal information from you when you visit our website, use our services, or communicate with us. This may include your name, email address, phone number, and other information you provide to us.
+          <br><br>
+          <strong>Use of Information</strong>
+          We may use your personal information to provide you with our services, communicate with you, improve our website and services, and comply with legal obligations.
+          <br><br>
+          <strong>Disclosure of Information</strong>
+          We may disclose your personal information to third-party service providers who help us operate our website and provide our services. We may also disclose your personal information if required by law or to protect our rights or the rights of others.
+          <br><br>
+          <strong>Security</strong>
+          We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, we cannot guarantee the security of your information.
+            <br><br>
+            <strong>Cookies</strong>
+          We may use cookies to collect information about your use of our website and services. You may opt-out of cookie tracking by adjusting your browser settings.
+            <br><br>
+              <strong>Third-Party Links</strong>
+          Our website may contain links to third-party websites. We are not responsible for the privacy practices of these websites.
+            <br><br>
+                <strong>Changes to Privacy Policy</strong>
+          We may update this Privacy Policy from time to time. We will notify you of any material changes to this Policy by posting the new Policy on our website.
+            <br><br>
+                  <strong>Contact Us</strong>
+          If you have any questions about this Privacy Policy, please contact us at [insert contact information].
+        </p>
+      </div>
+    </div>
+
+    <div style="padding-top: 20px; margin-bottom: 20px; text-align: center;">
+      <button class="btn btn-primary mr-2 btn-lg" onclick="window.history.back()">Back</button>
+    </div>
+
+
+  </main>
+</div>
+
+
+<div class="footer-basic" style="position: fixed;">
+  <footer>
+    <ul class="list-inline">
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/terms-of-use}">Terms and Use</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/privacy-policy}">Privacy Policy</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/cookies-policy}">Cookies</a></li>
+    </ul>
+    <p><a href="mailto:theGirlz@example.com" style="color:white; font-size: 12px;">Email Us: theGirlz@example.com</a></p>
+    <p class="copyright">Zero Food Waste © 20238</p>
+  </footer>
+</div>
+
+</body>
+
+
+</html>
+

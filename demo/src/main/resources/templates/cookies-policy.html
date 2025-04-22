@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero Food Waste</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapper">
+  <!-- Contains the heading, navigation and banner image -->
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" th:href="@{/}" style="color:white;">Zero Food Waste</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a th:href="@{/}" style="font-size: 20px;">About Us<span class = "sr-only">(current)</span></a></li>
+            <li><a th:href="@{/}" style="font-size: 20px;">FAQ</a></li>
+            <li><a th:href="@{/}" style="font-size: 20px;">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a th:href="@{/login}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a th:href="@{/register}" style="font-size: 20px;"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <br>
+    <br>
+    <br>
+    <div style="margin: 0 auto; max-width: 800px;">
+      <div style="padding: 20px 20px 0 20px;"></div>
+      <h3 style="text-align: center;">Cookies Policy</h3>
+      <div style="padding: 20px; text-align: justify; margin-left: 20px; margin-right: 20px;">
+        <p style = "padding-top:0px; text-align: justify;">
+          This website uses cookies to improve your browsing experience and provide you with personalized content. Cookies are small text files that are stored on your device when you visit a website. They are widely used by website owners to make their websites work, or to work more efficiently, as well as to provide reporting information.
+          <br><br>
+          We use both session cookies (which expire once you close your web browser) and persistent cookies (which stay on your device until they expire or you delete them) on this website. The cookies we use do not contain any personal information that could identify you, but they may be used to personalize your experience on our website, such as by remembering your language preferences or displaying content tailored to your interests.
+          <br><br>
+          By using our website, you consent to the use of cookies in accordance with this Cookie Policy. If you do not agree to the use of cookies, you should adjust your web browser settings to reject cookies from our website, although this may affect your ability to use some features of our website.
+          <br><br>
+          We may update this Cookie Policy from time to time to reflect changes to our use of cookies. Any such updates will be posted on this page, so we encourage you to check back periodically. If you have any questions about this Cookie Policy, please contact us at [insert contact email].
+        </p>
+      </div>
+    </div>
+
+    <div style="padding-top: 20px; margin-bottom: 20px; text-align: center;">
+      <button class="btn btn-primary mr-2 btn-lg" onclick="window.history.back()">Back</button>
+    </div>
+
+
+  </main>
+
+
+</div>
+
+<div class="footer-basic" style="position: fixed;">
+  <footer>
+    <ul class="list-inline">
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/terms-of-use}">Terms and Use</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/privacy-policy}">Privacy Policy</a></li>
+      <li class="list-inline-item" style = "font-size: 15px;"><a th:href="@{/cookies-policy}">Cookies</a></li>
+    </ul>
+    <p><a href="mailto:theGirlz@example.com" style="color:white; font-size: 12px;">Email Us: theGirlz@example.com</a></p>
+    <p class="copyright">Zero Food Waste © 20238</p>
+  </footer>
+</div>
+
+</body>
+
+
+</html>
+
