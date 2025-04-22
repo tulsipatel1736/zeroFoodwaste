@@ -1,4 +1,4 @@
-# ZERO FOOD WASTE
+# 🥦ZERO FOOD WASTE
 
 Zero Food Waste is a web-based application designed to reduce food waste by connecting individuals, schools, and communities. Users can share surplus food, access excess supplies, and promote sustainability through real-time listings and user-driven contributions.
 
